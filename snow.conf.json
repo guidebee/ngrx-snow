@@ -1,3 +1,25 @@
 {
-
+  "snow": {
+    "instance": "dev70012.service-now.com",
+    "auth": "Basic amFtZXM6IUAjUGFzc3dvcmRAMg==",
+    "endpoint": "x_299862_ngrx_index.do"
+  },
+  "application": {
+    "name": "ngrxdemo",
+    "scope": "x_299862_ngrx",
+    "sys_id": "3cc9cd39dbd223003cb59235ca961972"
+  },
+  "files": {
+    "html": {
+      "index": "91c9c939dbd223003cb59235ca9619d5"
+    },
+    "js": {
+      "main": "11c94939dbd223003cb59235ca961980",
+      "runtime": "11c9cd39dbd223003cb59235ca961978",
+      "polyfills": "59c98939dbd223003cb59235ca9619be"
+    },
+    "css": {
+      "styles": "55c9c939dbd223003cb59235ca9619d1"
+    }
+  }
 }
