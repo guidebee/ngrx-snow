@@ -1,6 +1,6 @@
 {
-  "name": "ng-snow",
-  "version": "1.2.0",
+  "name": "ngrx-snow",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
