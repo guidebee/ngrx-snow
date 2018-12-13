@@ -5,21 +5,21 @@
     "endpoint": "x_299862_ngrx_index.do"
   },
   "application": {
-    "name": "ngrxdemo",
+    "name": "ngrx",
     "scope": "x_299862_ngrx",
-    "sys_id": "3cc9cd39dbd223003cb59235ca961972"
+    "sys_id": "4cf3ed79db1623003cb59235ca96197e"
   },
   "files": {
     "html": {
-      "index": "91c9c939dbd223003cb59235ca9619d5"
+      "index": "bcf3a9b9db1623003cb59235ca96195d"
     },
     "js": {
-      "main": "11c94939dbd223003cb59235ca961980",
-      "runtime": "11c9cd39dbd223003cb59235ca961978",
-      "polyfills": "59c98939dbd223003cb59235ca9619be"
+      "polyfills": "30f3adb9db1623003cb59235ca961947",
+      "runtime": "f0f3a9b9db1623003cb59235ca961959",
+      "main": "f0f3adb9db1623003cb59235ca961930"
     },
     "css": {
-      "styles": "55c9c939dbd223003cb59235ca9619d1"
+      "styles": "f4f3e979db1623003cb59235ca961921"
     }
   }
 }

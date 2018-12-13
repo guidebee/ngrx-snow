@@ -1,0 +1,17 @@
+<bhpfd-big-input [placeholder]="'bhpfd.search.input' | translate" [value]="newSearch"
+                 (keyup)="onNewSearchChange($event.target.value)" (keyup.enter)="!isSearchDisabled && onNewSearch()"
+                 (keyup.escape)="onNewSearchClear()" matInput [matAutocomplete]="auto">
+  <bhpfd-big-input-action ariaLabel="search service" fontSet="fas" fontIcon="fa-search" faIcon="search" color="accent"
+                          (action)="onNewSearch()" [matTooltip]="'bhpfd.search.input' | translate"
+                          matTooltipPosition="after"></bhpfd-big-input-action>
+  <mat-autocomplete #auto="matAutocomplete" (optionSelected)="chooseServiceCatalogue($event)">
+    <mat-option *ngFor="let serviceCatalogue of filteredServiceCatalogues | async" [value]="serviceCatalogue.text">
+      <mat-icon align="start">
+        <fa-icon icon="{{serviceCatalogue.icon}}"></fa-icon>
+      </mat-icon>
+      {{serviceCatalogue.text}}
+    </mat-option>
+  </mat-autocomplete>
+</bhpfd-big-input>
+
+

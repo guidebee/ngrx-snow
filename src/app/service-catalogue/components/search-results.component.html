@@ -1,0 +1,30 @@
+<mat-grid-list cols="3" rowHeight="270px">
+  <mat-grid-tile *ngFor="let serviceCatalogue of serviceCatalogues">
+    <mat-card class="service-card">
+      <mat-card-header>
+        <mat-card-title>
+          <mat-icon align="start">
+            <fa-icon icon="{{serviceCatalogue.icon}}"></fa-icon>
+          </mat-icon>
+          {{serviceCatalogue.text}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div>
+          <button mat-button>LIKE</button>
+        </div>
+        <div>
+          <button mat-button>LIKE</button>
+        </div>
+        <div>
+          <button mat-button>LIKE</button>
+        </div>
+        <div>
+          <button mat-button>LIKE</button>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-button>MORE ...</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

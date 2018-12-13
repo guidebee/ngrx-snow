@@ -1,0 +1,9 @@
+$bhpfd-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$bhpfd-black-accent: mat-palette($mat-blue-grey, 400);
+$bhpfd-black-warn: mat-palette($mat-red, 500);
+
+$bhpfd-black-theme: mat-dark-theme(
+  $bhpfd-black-primary,
+  $bhpfd-black-accent,
+  $bhpfd-black-warn
+);

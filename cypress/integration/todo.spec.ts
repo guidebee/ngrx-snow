@@ -2,7 +2,7 @@ const newToDo1 = 'New Todo 1';
 const newToDo2 = 'New Todo 2';
 const existingToDo1 = 'Open Todo list example';
 const existingToDo2 = 'Check the other examples';
-const existingToDo3 = 'Use BHP Digital Platform Front Door in your project';
+const existingToDo3 = 'Use NGRX ServiceNow Demo in your project';
 
 describe('TODO Actions', () => {
   beforeEach(() => {

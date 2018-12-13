@@ -1,0 +1,5 @@
+<mat-card class="big-input" [ngClass]="{ 'has-focus': hasFocus }">
+  <input (focus)="hasFocus = true" (blur)="hasFocus = false" [value]="value" [matAutocomplete]="matAutocomplete"
+         [placeholder]="placeholder" matInput [disabled]="disabled"/>
+  <ng-content></ng-content>
+</mat-card>

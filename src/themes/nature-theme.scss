@@ -1,0 +1,9 @@
+$bhpfd-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$bhpfd-nature-accent: mat-palette($mat-deep-purple, 300);
+$bhpfd-nature-warn: mat-palette($mat-red, 600);
+
+$bhpfd-nature-theme: mat-light-theme(
+  $bhpfd-nature-primary,
+  $bhpfd-nature-accent,
+  $bhpfd-nature-warn
+);

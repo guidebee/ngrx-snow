@@ -1,42 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { Routes, RouterModule } from '@angular/router';
-import { APP_BASE_HREF, Location } from '@angular/common';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { SnowInterceptor } from './services/snow.interceptor';
+import { SharedModule } from '@app/shared';
+import { CoreModule } from '@app/core';
 
+import { SettingsModule } from './settings';
+import { StaticModule } from './static';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { HomeComponent } from './home/home.component';
-
-
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: '404', component: NotFoundComponent },
-  { path: '*', redirectTo: '404' },
-  { path: '**', redirectTo: '404' }
-];
-
+import { ServiceCatalogueModule } from '@app/service-catalogue';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NotFoundComponent,
-    HomeComponent
-  ],
   imports: [
-    RouterModule.forRoot(appRoutes, { useHash: true }),
+    // angular
+    BrowserAnimationsModule,
     BrowserModule,
-    FormsModule,
-    HttpClientModule
+
+    // core & shared
+    CoreModule,
+    SharedModule,
+
+    // features
+    StaticModule,
+    SettingsModule,
+    ServiceCatalogueModule,
+
+    // app
+    AppRoutingModule
   ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: SnowInterceptor, multi: true },
-    { provide: APP_BASE_HREF, useValue: '/' }
-  ],
+  declarations: [AppComponent],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
